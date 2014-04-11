@@ -14,7 +14,7 @@ if (window.location.hash) {
 	console.log('All good!');
 } else {
 	var linkToCourses = document.querySelector('[href="#semester_category_14A"]');
-	linkToCourses.onclick();
+	linkToCourses.click();
 }
 
 console.log('================================');
