@@ -1,0 +1,29 @@
+{
+    "name": "AAU MoodleFix",
+    "version": "0.1",
+    "description": "Lets fix AAU Moodle!",
+    "manifest_version": 2,
+    
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "page_action": {
+        "default_icon": {                    // optional
+          "19": "images/icon19.png",           // optional
+          "38": "images/icon38.png"            // optional
+        },
+        "default_title": "AAU MoodleFix"
+    },
+
+    "permissions": ["declarativeContent", "tabs"],
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.moodle.aau.dk/*"],
+            "css": ["enhance.css"],
+            "js": ["enhance.js"]
+        }
+    ]
+}

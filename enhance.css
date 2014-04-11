@@ -1,0 +1,17 @@
+.aalborg_logo {
+	width: 178px !important;
+}
+
+.nav.aalborg_top {
+	text-align: center !important;
+	width: 100% !important;
+}
+
+.nav.aalborg_top li {
+	float: none !important;
+	display: inline-block !important;
+}
+
+.bg-img {
+	/*background: #eee !important;*/
+}
