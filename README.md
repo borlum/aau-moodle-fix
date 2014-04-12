@@ -6,6 +6,7 @@ Fyld issues op, med alle de issues man føler Moodle har - og så ser vi, om vi 
 - Logo er endelig centreret
 - Man ryger til login, hvis session udløber
 - Default er ikke længere cross-semester kurser, men de egentlige kurser
+- Langt mere clean udseende - alt overflødigt skåret fra - det kan diskuteres, men virker godt pt.
 
 ###Installation
 Klon repo og installér igennem "Load unpacked extension..." i Chrome. Kræver at der er sat hak i "Developer mode".
