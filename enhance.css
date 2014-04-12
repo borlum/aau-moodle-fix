@@ -14,4 +14,17 @@
 
 .bg-img {
 	/*background: #eee !important;*/
+	background: #211A52 !important;
+}
+
+#region-main {
+	width: 100% !important;
+}
+
+#region-post {
+	display: none !important;
+}
+
+.aalborg_sub.subnav {
+	display: none !important;
 }
