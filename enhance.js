@@ -1,6 +1,32 @@
+var sheet = (function() {
+	// Create the <style> tag
+	var style = document.createElement("style");
+
+	// WebKit hack :(
+	style.appendChild(document.createTextNode(""));
+
+	// Add the <style> element to the page
+	document.head.appendChild(style);
+
+	return style.sheet;
+})();
+
 console.log('==========================================');
 console.log('--> AAU MoodleFix, BEGIN!');
 console.log('==========================================');
+
+sheet.addRule('.aalborg_logo', 'width: 178px !important;', 0);
+sheet.addRule('.nav.aalborg_top', 'text-align: center !important; width: 100% !important;', 0);
+
+sheet.addRule('.nav.aalborg_top li', 'float: none !important; display: inline-block !important;', 0);
+sheet.addRule('.bg-img', 'background: #211A52 !important;', 0);
+
+sheet.addRule('#region-main', 'width: 100% !important;', 0);
+sheet.addRule('#region-post', 'display: none !important;', 0);
+
+sheet.addRule('.aalborg_sub.subnav', 'display: none !important;', 0);
+
+
 
 var loginInfoElement;
 if (loginInfoElement = document.querySelector('.moodleuser > .main')) {

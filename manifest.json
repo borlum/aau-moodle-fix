@@ -22,7 +22,7 @@
     "content_scripts": [
         {
             "matches": ["*://*.moodle.aau.dk/*"],
-            "css": ["enhance.css"],
+            //"css": ["enhance.css"],
             "js": ["enhance.js"]
         }
     ]
