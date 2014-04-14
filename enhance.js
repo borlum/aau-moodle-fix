@@ -34,6 +34,11 @@ if (loginInfoElement = document.querySelector('.moodleuser > .main')) {
 	console.log('Logged in as: ' + userStr);
 } else {
 	console.log('Not logged in / at subsite without login info');
+	if (document.URL.indexOf('calmoodle') != -1) {
+		console.log('@ calmoodle!');
+	} else {
+		window.location.href = 'https://login.aau.dk/cas/login?service=http%3A%2F%2Fwww.moodle.aau.dk%2Flogin%2Findex.php';
+	}
 }
 
 if (userStr === 'Guest user') {
