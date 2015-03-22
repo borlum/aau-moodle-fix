@@ -28,8 +28,8 @@ sheet.addRule('.aalborg_sub.subnav', 'display: none !important;', 0);
 
 
 
-var loginInfoElement;
-if (loginInfoElement = document.querySelector('.moodleuser > .main')) {
+var loginInfoElement =  document.querySelector('.moodleuser > .main') || document.querySelector('#usermenu .hidemobile');
+if (loginInfoElement) {
 	var userStr = loginInfoElement.innerHTML.trim();
 	console.log('Logged in as: ' + userStr);
 } else {
@@ -41,7 +41,7 @@ if (loginInfoElement = document.querySelector('.moodleuser > .main')) {
 	}
 }
 
-if (userStr === 'Guest user') {
+if (userStr === 'Guest user' || userStr === 'Gæst') {
 	window.location.href = 'https://login.aau.dk/cas/login?service=http%3A%2F%2Fwww.moodle.aau.dk%2Flogin%2Findex.php';
 } else {
 	var userCtrl = document.querySelector('.span4.topnav.right > ul');
